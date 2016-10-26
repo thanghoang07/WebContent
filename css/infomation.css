@@ -1,0 +1,34 @@
+body {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #eee;
+}
+
+.form-infomation {
+	max-width: 600px;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+.form-infomation .form-infomation-heading, .form-infomation .checkbox {
+	margin-bottom: 15px;
+}
+
+.form-infomation .checkbox {
+	font-weight: normal;
+}
+
+.form-infomation .form-control {
+	position: relative;
+	height: auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.form-infomation .form-control:focus {
+	z-index: 3;
+}
+
