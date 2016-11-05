@@ -25,13 +25,13 @@
 				<div class="collapse navbar-collapse"
 					id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li><a href="index.jsp">Trang chủ</a></li>
-						<li><a href="about.jsp">Thông tin</a></li>
-						<li><a href="lab.jsp">Lab</a></li>						
+						<li><a href="/index.jsp">Trang chủ</a></li>
+						<li><a href="/about.jsp">Thông tin</a></li>
+						<li><a href="/lab.jsp">Lab</a></li>						
 					</ul>
 
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="login.jsp">Đăng Nhập</a></li>
+						<li><a href="/login.jsp">Đăng Nhập</a></li>
 					</ul>
 				</div>
 				<!-- /.navbar-collapse -->

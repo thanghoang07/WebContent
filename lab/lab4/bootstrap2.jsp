@@ -62,21 +62,13 @@
 						<th scope="row">1</th>
 						<td>NV001</td>
 						<td>ABC</td>
-						<td><div class="input-group-btn">
-								<button type="button" class="btn btn-default dropdown-toggle"
-									data-toggle="dropdown" aria-haspopup="true"
-									aria-expanded="false">
-									Action <span class="caret"></span>
-								</button>
-								<ul class="dropdown-menu">
-									<li><a href="#">Action</a></li>
-									<li><a href="#">Another action</a></li>
-									<li><a href="#">Something else here</a></li>
-									<li><a href="#">Separated link</a></li>
-								</ul>
-							</div>
-							<!-- /btn-group --></td>
-						<td></td>
+						<td><input type="text" name="loai" list="loaiNV"> <datalist
+								id="loaiNV">
+								<option value="Nhân viên">
+								<option value="Nhân viên giỏi">
+								<option value="Nhân viên cao cấp">
+							</datalist></td>
+						<td><input type="text" placeholder="3.000.000.0"></td>
 						<td>
 							<button type="button" class="btn btn-primary">
 								<span class="glyphicon glyphicon-edit"></span>
@@ -88,65 +80,69 @@
 						<th scope="row">2</th>
 						<td>NV001</td>
 						<td>ABC</td>
-						<td>07/08/1987</td>
-						<td>KT</td>
-						<td><button type="button" class="btn btn-info">
-								<span class="glyphicon glyphicon-info-sign"></span>
-							</button>
+						<td><input type="text" name="loai" list="loaiNV"> <datalist
+								id="loaiNV">
+								<option value="Nhân viên">
+								<option value="Nhân viên giỏi">
+								<option value="Nhân viên cao cấp">
+							</datalist></td>
+						<td><input type="text" placeholder="3.000.000.0"></td>
+						<td>
 							<button type="button" class="btn btn-primary">
 								<span class="glyphicon glyphicon-edit"></span>
 							</button>
-							<button type="button" class="btn btn-danger">
-								<span class="glyphicon glyphicon-trash"></span>
-							</button></td>
+						</td>
 					</tr>
 					<tr>
 						<th scope="row">3</th>
 						<td>NV001</td>
 						<td>ABC</td>
-						<td>07/08/1987</td>
-						<td>KT</td>
-						<td><button type="button" class="btn btn-info">
-								<span class="glyphicon glyphicon-info-sign"></span>
-							</button>
+						<td><input type="text" name="loai" list="loaiNV"> <datalist
+								id="loaiNV">
+								<option value="Nhân viên">
+								<option value="Nhân viên giỏi">
+								<option value="Nhân viên cao cấp">
+							</datalist></td>
+						<td><input type="text" placeholder="3.000.000.0"></td>
+						<td>
 							<button type="button" class="btn btn-primary">
 								<span class="glyphicon glyphicon-edit"></span>
 							</button>
-							<button type="button" class="btn btn-danger">
-								<span class="glyphicon glyphicon-trash"></span>
-							</button></td>
+						</td>
 					</tr>
 					<tr>
 						<th scope="row">4</th>
 						<td>NV001</td>
 						<td>ABC</td>
-						<td>07/08/1987</td>
-						<td>KT</td>
-						<td><button type="button" class="btn btn-info">
-								<span class="glyphicon glyphicon-info-sign"></span>
-							</button>
+						<td><input type="text" name="loai" list="loaiNV"> <datalist
+								id="loaiNV">
+								<option value="Nhân viên">
+								<option value="Nhân viên giỏi">
+								<option value="Nhân viên cao cấp">
+							</datalist></td>
+						<td><input type="text" placeholder="3.000.000.0"></td>
+						<td>
 							<button type="button" class="btn btn-primary">
 								<span class="glyphicon glyphicon-edit"></span>
 							</button>
-							<button type="button" class="btn btn-danger">
-								<span class="glyphicon glyphicon-trash"></span>
-							</button></td>
+						</td>
 					</tr>
 					<tr>
 						<th scope="row">5</th>
 						<td>NV001</td>
 						<td>ABC</td>
-						<td>07/08/1987</td>
-						<td>KT</td>
-						<td><button type="button" class="btn btn-info">
-								<span class="glyphicon glyphicon-info-sign"></span>
-							</button>
+						<td><input type="text" name="loai" list="loaiNV"> <datalist
+								id="loaiNV">
+								<option value="Nhân viên">
+								<option value="Nhân viên giỏi">
+								<option value="Nhân viên cao cấp">
+							</datalist></td>
+						<td><input type="text" placeholder="3.000.000.0"></td>
+						<td>
 							<button type="button" class="btn btn-primary">
 								<span class="glyphicon glyphicon-edit"></span>
 							</button>
-							<button type="button" class="btn btn-danger">
-								<span class="glyphicon glyphicon-trash"></span>
-							</button></td>
+						</td>
 					</tr>
 				</tbody>
 			</table>
