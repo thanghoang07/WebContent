@@ -26,7 +26,10 @@ function op3() {
 	window.location.href = '../lab/lab4/lab4.jsp';
 }
 function op4() {
-	window.location.href = '../notFound.jsp';
+	window.location.href = '../product/Product.jsp';
+}
+function op5() {
+	window.location.href = '../product/Product.jsp';
 }
 // trong lab4
 function opl40() {

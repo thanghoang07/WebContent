@@ -113,6 +113,22 @@
 				</div>
 
 			</div>
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="../img/img1.jpg" alt="lab3">
+					<div class="caption">
+						<h3>Lab6</h3>
+						<p>Ấn vào để xem chi tiết</p>
+						<p>
+							<input type="button" class="btn btn-primary" role="button"
+								onclick="op5()" value="Click" /> <input type="button"
+								class="btn btn-default" role="button" onclick="op5()"
+								value="Click" />
+						</p>
+					</div>
+				</div>
+
+			</div>
 		</div>
 	</div>
 </body>

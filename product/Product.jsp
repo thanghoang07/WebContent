@@ -36,7 +36,6 @@
 		Product pr = (Product) session.getAttribute("pr");
 		//
 		ArrayList<Product> list = DAO.getListProduct();
-		
 	%>
 
 	<div class="container">
