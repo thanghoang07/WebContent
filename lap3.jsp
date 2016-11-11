@@ -341,8 +341,7 @@
 						<option value="LT">Lithuania</option>
 						<option value="LU">Luxembourg</option>
 						<option value="MO">Macao</option>
-						<option value="MK">Macedonia, the former Yugoslav
-							Republic of</option>
+						<option value="MK">Macedonia, the former Yugoslav Republic of</option>
 						<option value="MG">Madagascar</option>
 						<option value="MW">Malawi</option>
 						<option value="MY">Malaysia</option>
@@ -396,8 +395,7 @@
 						<option value="RU">Russian Federation</option>
 						<option value="RW">Rwanda</option>
 						<option value="BL">Saint Barthélemy</option>
-						<option value="SH">Saint Helena, Ascension and Tristan da
-							Cunha</option>
+						<option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
 						<option value="KN">Saint Kitts and Nevis</option>
 						<option value="LC">Saint Lucia</option>
 						<option value="MF">Saint Martin (French part)</option>
@@ -418,8 +416,7 @@
 						<option value="SB">Solomon Islands</option>
 						<option value="SO">Somalia</option>
 						<option value="ZA">South Africa</option>
-						<option value="GS">South Georgia and the South Sandwich
-							Islands</option>
+						<option value="GS">South Georgia and the South Sandwich	Islands</option>
 						<option value="SS">South Sudan</option>
 						<option value="ES">Spain</option>
 						<option value="LK">Sri Lanka</option>

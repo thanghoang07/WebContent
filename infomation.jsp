@@ -108,19 +108,35 @@
 </script>
 </head>
 <body>
+
 	<div class="container">
 		<form id="infomation-form" class="form-infomation" method="post"
 			action="<%=request.getContextPath()%>/infomation">
 			<fieldset style="">
+				<jsp:scriptlet>String email = (String) request.getParameter("email");
+			String name = (String) request.getParameter("name");
+			String mobile = (String) request.getParameter("mobile");
+
+			if (email == null) {
+				email = "";
+			}
+			if (name == null) {
+				name = "";
+			}
+			if (mobile == null) {
+				mobile = "";
+			}</jsp:scriptlet>
 				<legend>Thông tin tài khoản</legend>
 				<h2 class="form-infomation-heading">Thông tin đăng nhập</h2>
 				<table class="table-register">
 					<tr>
 						<td><label for="inputEmail">Địa chỉ Email:</label></td>
 						<td><input type="text" name="email" class="form-control"
-							placeholder="Email address"> <%
+							placeholder="Email address" value="<%=email%>"> <%
  	if (request.getAttribute("email_error") != null) {
  		out.print("<font color=\"red\">" + (String) request.getAttribute("email_error") + "</font");
+ 	} else {
+ 		request.setAttribute("email", email);
  	}
  %><br></td>
 					</tr>
@@ -146,9 +162,11 @@
 					<tr>
 						<td><label for="inputText">Họ và tên:</label></td>
 						<td><input type="text" name="name" class="form-control"
-							placeholder="Họ và tên"> <%
+							placeholder="Họ và tên" value="<%=name%>"> <%
  	if (request.getAttribute("name_error") != null) {
  		out.print("<font color=\"red\">" + (String) request.getAttribute("name_error") + "</font");
+ 	} else {
+ 		request.setAttribute("name", name);
  	}
  %><br></td>
 					</tr>
@@ -176,12 +194,14 @@
 					<tr>
 						<td><label for="inputText">Số di động:</label></td>
 						<td><input type="tel" name="mobile" class="form-control"
-							placeholder="Số di động"> <%
+							placeholder="Số di động" value="<%=mobile%>"> <%
  	if (request.getAttribute("mobile_error") != null) {
  		out.print("<font color=\"red\">" + (String) request.getAttribute("mobile_error") + "</font");
  	}
  	if (request.getAttribute("number_error") != null) {
  		out.print("<font color=\"red\">" + (String) request.getAttribute("number_error") + "</font");
+ 	} else {
+ 		request.setAttribute("mobile", mobile);
  	}
  %><br></td>
 					</tr>
@@ -218,8 +238,9 @@
 										value="Xóa form" onclick="huy()">Hủy</button>
 								</div>
 								<div class="btn-group" role="group">
-									<button class="btn btn-lg btn-danger btn-block" type="button"
-										value="Xóa form" onclick="reForm()">Xóa form</button>
+									<input class="btn btn-lg btn-danger btn-block" type="reset" id="infomation-form" value="Xoa">
+									<!-- <button class="btn btn-lg btn-danger btn-block" type="button"
+										value="Xóa form" onclick="reForm()">Xóa form</button> -->
 								</div>
 								<div class="btn-group" role="group">
 									<input class="btn btn-lg btn-primary btn-block" type="submit"

@@ -67,7 +67,7 @@
 					<td><a
 						href="<%=request.getContextPath()%>/watchAnime?index=<%=i%>"
 						type="button" class="btn btn-warning"><span
-							class="glyphicon glyphicon-trash"></span>&nbsp; Xóa</a></td>
+							class="glyphicon glyphicon-trash"></span>&nbsp; Thêm</a></td>
 				</tr>
 				<%
 					}

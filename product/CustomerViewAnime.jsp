@@ -1,3 +1,4 @@
+<%@page import="model.Admin"%>
 <%@page import="model.Product"%>
 <%@page import="model.DAO"%>
 <%@page import="model.Anime"%>
@@ -30,14 +31,14 @@
 </head>
 <body>
 	<%
-		Customer cu = null;
-		if (session.getAttribute("customer") == null) {
+		Admin ad = null;
+		if (session.getAttribute("admin") == null) {
 	%>
 	<jsp:forward page="/login.jsp"></jsp:forward>
 	<%
 		} else {
-			cu = (Customer) session.getAttribute("customer");
-			ArrayList<Anime> watchAn = cu.getWatchAni();
+			ad = (Admin) session.getAttribute("admin");
+			ArrayList<Anime> watchAn = ad.getWatchAni();
 			/* ArrayList<Product> lis = DAO.getListProduct(); */
 	%>
 	<div class="container">
@@ -50,18 +51,17 @@
 				<th>Nhà sản xuất</th>
 			</tr>
 			<%
-				if (cu != null) {
-						for (int i = 0; i < watchAn.size() /* lis.size() */; i++) {
+				if (ad != null) {
+						for (int i = 0; i < watchAn.size(); i++) {
 			%>
 
 			<tr>
-				<td><%=watchAn.get(i).getId() /* lis.get(i).getId() */%></td>
-				<td><%=watchAn.get(i).getName() /* lis.get(i).getName() */%> <span
+				<td><%=watchAn.get(i).getId()%></td>
+				<td><%=watchAn.get(i).getName()%> <span
 					class="label label-danger">&nbsp;Mới</span></td>
 				<td><img class="img-thumbnails colxs-3"
-					src="<%=watchAn.get(i).getImgUrl() /* lis.get(i).getImgUrl() */%>"
-					width="130px" height="130px"></td>
-				<td><%=watchAn.get(i).getNhaSX() /* lis.get(i).getPrice() */%></td>
+					src="<%=watchAn.get(i).getImgUrl()%>" width="130px" height="130px"></td>
+				<td><%=watchAn.get(i).getNhaSX()%></td>
 			</tr>
 			<%
 				}
