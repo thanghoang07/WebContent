@@ -31,15 +31,16 @@
 </head>
 <body>
 	<%
-		Admin ad = null;
 		if (session.getAttribute("admin") == null) {
 	%>
 	<jsp:forward page="/login.jsp"></jsp:forward>
 	<%
 		} else {
-			ad = (Admin) session.getAttribute("admin");
-			ArrayList<Anime> watchAn = ad.getWatchAni();
-			/* ArrayList<Product> lis = DAO.getListProduct(); */
+			//
+			model.Admin ad = (model.Admin) session.getAttribute("admin");
+			//
+			//ArrayList<model.Anime> watchAn = ad.getWatchAni();
+			//
 	%>
 	<div class="container">
 		<h2 class="text-center">Danh sách phim đã xem</h2>
@@ -50,9 +51,10 @@
 				<th>Hình</th>
 				<th>Nhà sản xuất</th>
 			</tr>
-			<%
+			<%--  <%
 				if (ad != null) {
-						for (int i = 0; i < watchAn.size(); i++) {
+						if (watchAn.size() != 0) {
+							for (int i = 0; i < watchAn.size(); i++) {
 			%>
 
 			<tr>
@@ -65,8 +67,17 @@
 			</tr>
 			<%
 				}
-					}
+			 			}else{
+							%> --%>
+			<tr>
+				<td colspan="4" style="text-align: center;">Danh sách rổng</td>
+				
+			</tr>
+
+			<%
 				}
+			//	}
+				//}
 			%>
 		</table>
 	</div>
