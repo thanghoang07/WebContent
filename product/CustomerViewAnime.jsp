@@ -39,7 +39,7 @@
 			//
 			model.Admin ad = (model.Admin) session.getAttribute("admin");
 			//
-			//ArrayList<model.Anime> watchAn = ad.getWatchAni();
+			ArrayList<model.Anime> watchAn = ad.getWatchAni();
 			//
 	%>
 	<div class="container">
@@ -51,7 +51,7 @@
 				<th>Hình</th>
 				<th>Nhà sản xuất</th>
 			</tr>
-			<%--  <%
+			<%
 				if (ad != null) {
 						if (watchAn.size() != 0) {
 							for (int i = 0; i < watchAn.size(); i++) {
@@ -68,17 +68,19 @@
 			<%
 				}
 			 			}else{
-							%> --%>
+							%>
 			<tr>
 				<td colspan="4" style="text-align: center;">Danh sách rổng</td>
-				
 			</tr>
 
 			<%
 				}
-			//	}
-				//}
+			}
+				}
 			%>
+			<%-- <%
+				}
+			%> --%>
 		</table>
 	</div>
 </body>
