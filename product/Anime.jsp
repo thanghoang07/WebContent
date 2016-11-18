@@ -1,3 +1,4 @@
+<%@page import="DAO.DAOAnime"%>
 <%@page import="model.DAO1"%>
 <%@page import="model.Check"%>
 <%@page import="java.util.ArrayList"%>
@@ -5,6 +6,7 @@
 	pageEncoding="UTF-8"%>
 <%@page import="java.text.DecimalFormat"%>
 <%@page import="model.Anime"%>
+<%@page import="DAO.DAOAnime"%>
 <%@page import="java.util.Arrays"%>
 <%@page import="java.util.Iterator"%>
 <!DOCTYPE html>
@@ -32,7 +34,7 @@
 </head>
 <body>
 	<%
-		ArrayList<Anime> list = DAO1.getListAnime();
+		ArrayList<Anime> list = DAOAnime.getListAnime();
 	%>
 	<div class="container">
 		<div class="panel panel-default">
